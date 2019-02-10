@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+.wrapper-get-it {
+  background-color: #2dd1ac;
+  padding: 45px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-get-it .wrapper-text {
+  margin-left: 20px;
+}
+.wrapper-get-it .wrapper-text h3 {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 35px;
+}
+.wrapper-get-it .wrapper-text p {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.wrapper-get-it .get-it {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #2dd1ac;
+  font-size: 18px;
+  font-family: 'Roboto';
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+  margin-right: 100px;
+  padding: 10px 30px;
+  height: 58px;
+}
+.wrapper-get-it .get-it:hover {
+  background-color: transparent;
+  color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  position: relative;
+}
+body #root .App .wrapper .block-1 {
+  height: 560px;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://livedemo00.template-help.com/wt_62267_v7/landing/images/home-slider-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #root .App .wrapper .block-1 header {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+}
+body #root .App .wrapper .block-1 header .header-inner {
+  background-color: transparent;
+  padding: 35px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+body #root .App .wrapper .block-1 header .header-inner.color {
+  background-color: #333;
+  padding: 15px 15px;
+}
+body #root .App .wrapper .block-1 header .header-inner .logo {
+  max-width: 160px;
+  height: auto;
+  cursor: pointer;
+}
+body #root .App .wrapper .block-1 header .header-inner .menu {
+  list-style: none;
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-1 header .header-inner .menu {
+    display: none;
+  }
+}
+body #root .App .wrapper .block-1 header .header-inner .menu li {
+  margin-right: 10px;
+  color: #fff;
+  font-family: 'Roboto';
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+body #root .App .wrapper .block-1 header .header-inner .menu li:hover {
+  color: #2ecba8;
+}
+body #root .App .wrapper .block-1 header .header-inner .menu li:last-child {
+  margin-right: 0;
+}
+body #root .App .wrapper .block-1 header .buy-template-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 15px 35px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 100i;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+}
+body #root .App .wrapper .block-1 header .buy-template-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+body #root .App .wrapper .block-1 .wrapper-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #root .App .wrapper .block-1 .wrapper-info h1 {
+  text-align: center;
+  font-size: 44px;
+  color: #fff;
+  font-family: 'Roboto';
+  margin: 0;
+}
+body #root .App .wrapper .block-1 .wrapper-info h3 {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  font-family: 'Roboto';
+}
+body #root .App .wrapper .block-1 .wrapper-info .demo {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 15px 35px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+}
+body #root .App .wrapper .block-1 .wrapper-info .demo:hover {
+  background-color: #fff;
+  color: #000;
+}
+body #root .App .wrapper .block-3 {
+  padding: 70px 15px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+body #root .App .wrapper .block-3 h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+body #root .App .wrapper .block-3 h2 .change-font {
+  font-size: 64px;
+  font-family: 'Indie Flower', cursive;
+  display: inline-block;
+  color: #119df7;
+}
+body #root .App .wrapper .block-3 .advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body #root .App .wrapper .block-3 .advantages .advantage {
+  padding: 0 60px;
+  text-align: center;
+}
+body #root .App .wrapper .block-3 .advantages .advantage i {
+  color: #119df7;
+  font-size: 100px;
+}
+body #root .App .wrapper .block-3 .advantages .advantage h3 {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+body #root .App .wrapper .block-3 .advantages .advantage p {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 200px;
+}
+body #root .App .wrapper .block-4 {
+  padding: 70px 5px 20px 5px;
+  margin: 0 auto;
+}
+body #root .App .wrapper .block-4 h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+body #root .App .wrapper .block-4 p {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 100;
+  color: #888;
+}
+body #root .App .wrapper .block-4 .wrapper-templates {
+  margin: 100px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body #root .App .wrapper .block-4 .wrapper-templates .template {
+  max-width: 300px;
+  height: auto;
+  margin: 15px;
+  position: relative;
+  transition: opacity 0.4s;
+  cursor: pointer;
+  box-shadow: 20px 20px 40px 0 rgba(0,0,0,0.12);
+}
+body #root .App .wrapper .block-4 .wrapper-templates .template .templateImage {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+body #root .App .wrapper .block-4 .wrapper-templates .template .templateText {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #fff;
+  color: #888;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+body #root .App .wrapper .block-4 .wrapper-templates .template .templateText .templateTitle {
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+body #root .App .wrapper .block-4 .wrapper-templates .template:hover .templateImage {
+  opacity: 0;
+}
+body #root .App .wrapper .block-4 .wrapper-templates .template:hover .templateText {
+  opacity: 1;
+}
+body #root .App .wrapper .block-5 {
+  padding: 100px 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+body #root .App .wrapper .block-5 h1 {
+  margin: 0;
+  font-size: 55px;
+  font-family: 'Roboto';
+  text-align: center;
+  font-weight: 300;
+}
+body #root .App .wrapper .block-5 p {
+  margin-top: 25px;
+  font-size: 24px;
+  font-family: 'Roboto';
+  text-align: center;
+  font-weight: 100;
+  color: #888;
+}
+body #root .App .wrapper .block-5 .wrapper-pre-made-layouts {
+  margin: 50px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 950px) {
+  body #root .App .wrapper .block-5 .wrapper-pre-made-layouts {
+    justify-content: center;
+  }
+}
+body #root .App .wrapper .block-5 .wrapper-pre-made-layouts .pre-made-layout {
+  cursor: pointer;
+}
+body #root .App .wrapper .block-5 .wrapper-pre-made-layouts .pre-made-layout img {
+  max-width: 230px;
+  height: auto;
+  margin: 30px 35px;
+  transition: all 0.5s;
+}
+body #root .App .wrapper .block-5 .wrapper-pre-made-layouts .pre-made-layout img:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 74px -15px rgba(0,0,0,0.3);
+}
+body #root .App .wrapper .block-5 .wrapper-pre-made-layouts .pre-made-layout div {
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 19px;
+}
+body #root .App .wrapper .block-5 .view-more {
+  background-color: #2dd1ac;
+  border: 1px solid #2dd1ac;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Roboto';
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+  padding: 15px 30px;
+  transition: all 0.5s;
+}
+body #root .App .wrapper .block-5 .view-more:hover {
+  background-color: #24aa8c;
+}
+body #root .App .wrapper .block-7 {
+  padding: 100px 15px;
+  margin: 0 auto;
+}
+body #root .App .wrapper .block-7 h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 55px;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+body #root .App .wrapper .block-7 .wrapper-monstroid-advantages {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-7 .wrapper-monstroid-advantages {
+    flex-wrap: wrap;
+  }
+}
+body #root .App .wrapper .block-7 .wrapper-monstroid-advantages .monstroid-advantage {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+body #root .App .wrapper .block-7 .wrapper-monstroid-advantages .monstroid-advantage img {
+  max-width: 100px;
+  height: auto;
+}
+body #root .App .wrapper .block-7 .wrapper-monstroid-advantages .monstroid-advantage h3 {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 300;
+}
+body #root .App .wrapper .block-7 .wrapper-monstroid-advantages .monstroid-advantage p {
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  color: #888;
+}
+body #root .App .wrapper .block-8 {
+  padding: 55px 15px;
+  background-color: #2ed3ae;
+}
+body #root .App .wrapper .block-8 .wrapper-optimized {
+  display: flex;
+  justify-content: space-between;
+}
+body #root .App .wrapper .block-8 .wrapper-optimized img {
+  max-width: 550px;
+  max-height: 450px;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-8 .wrapper-optimized img {
+    display: none;
+  }
+}
+body #root .App .wrapper .block-8 .wrapper-optimized .wrapper-infomation h1 {
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 60px;
+}
+@media screen and (max-width: 570px) {
+  body #root .App .wrapper .block-8 .wrapper-optimized .wrapper-infomation h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+body #root .App .wrapper .block-8 .wrapper-optimized .wrapper-infomation .wrapper-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 570px) {
+  body #root .App .wrapper .block-8 .wrapper-optimized .wrapper-infomation .wrapper-info-wrapper {
+    margin-top: 60px;
+  }
+}
+body #root .App .wrapper .block-8 .wrapper-optimized .wrapper-infomation .wrapper-info-wrapper .info {
+  display: flex;
+}
+body #root .App .wrapper .block-8 .wrapper-optimized .wrapper-infomation .wrapper-info-wrapper .info i {
+  font-size: 40px;
+  color: #fff;
+}
+body #root .App .wrapper .block-8 .wrapper-optimized .wrapper-infomation .wrapper-info-wrapper .info .wrapper-info-text {
+  margin-left: 15px;
+}
+body #root .App .wrapper .block-8 .wrapper-optimized .wrapper-infomation .wrapper-info-wrapper .info .wrapper-info-text h2 {
+  margin: 0px;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 300i;
+  font-size: 25px;
+}
+body #root .App .wrapper .block-8 .wrapper-optimized .wrapper-infomation .wrapper-info-wrapper .info .wrapper-info-text p {
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 20px;
+}
+body #root .App .wrapper .block-9 {
+  padding: 150px 50px;
+}
+body #root .App .wrapper .block-9 .wrapper-info-text {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-9 .wrapper-info-text {
+    flex-wrap: wrap;
+  }
+}
+body #root .App .wrapper .block-9 .wrapper-info-text .info-text .info {
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-9 .wrapper-info-text .info-text .info {
+    flex-direction: row-reverse;
+  }
+}
+body #root .App .wrapper .block-9 .wrapper-info-text .info-text .info .wrap-text {
+  margin-right: 15px;
+}
+body #root .App .wrapper .block-9 .wrapper-info-text .info-text .info .wrap-text h3 {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 25px;
+  margin: 0;
+  text-align: right;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-9 .wrapper-info-text .info-text .info .wrap-text h3 {
+    text-align: center;
+  }
+}
+body #root .App .wrapper .block-9 .wrapper-info-text .info-text .info .wrap-text p {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 100;
+  text-align: right;
+  color: #888;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-9 .wrapper-info-text .info-text .info .wrap-text p {
+    text-align: center;
+  }
+}
+body #root .App .wrapper .block-9 .wrapper-info-text .info-text .info i {
+  color: #119df7;
+  font-size: 35px;
+}
+body #root .App .wrapper .block-9 .wrapper-info-text img {
+  max-width: 500px;
+  height: 250px;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-9 .wrapper-info-text img {
+    display: none;
+  }
+}
+body #root .App .wrapper .block-9 .wrapper-info-text .info-text-2 .info-2 {
+  display: flex;
+}
+body #root .App .wrapper .block-9 .wrapper-info-text .info-text-2 .info-2 .wrap-text {
+  margin-right: 15px;
+}
+body #root .App .wrapper .block-9 .wrapper-info-text .info-text-2 .info-2 .wrap-text h3 {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 25px;
+  margin: 0;
+  text-align: left;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-9 .wrapper-info-text .info-text-2 .info-2 .wrap-text h3 {
+    text-align: center;
+  }
+}
+body #root .App .wrapper .block-9 .wrapper-info-text .info-text-2 .info-2 .wrap-text p {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 100;
+  text-align: left;
+  color: #888;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-9 .wrapper-info-text .info-text-2 .info-2 .wrap-text p {
+    text-align: center;
+  }
+}
+body #root .App .wrapper .block-9 .wrapper-info-text .info-text-2 .info-2 i {
+  color: #119df7;
+  font-size: 35px;
+}
+body #root .App .wrapper .block-11 {
+  padding: 80px 60px;
+  background-color: #f8f8f8;
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-11 img {
+    display: none;
+  }
+}
+body #root .App .wrapper .block-11 .wrapper-text-buy {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-11 .wrapper-text-buy {
+    margin: 0;
+  }
+}
+body #root .App .wrapper .block-11 .wrapper-text-buy h3 {
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+}
+body #root .App .wrapper .block-11 .wrapper-text-buy p {
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100i;
+}
+body #root .App .wrapper .block-12 {
+  padding: 150px 25px;
+}
+body #root .App .wrapper .block-12 h1 {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 45px;
+  font-weight: 300;
+  text-align: center;
+}
+body #root .App .wrapper .block-12 .wrapper-key-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  body #root .App .wrapper .block-12 .wrapper-key-features {
+    justify-content: center;
+  }
+}
+body #root .App .wrapper .block-12 .wrapper-key-features .feature {
+  margin-top: 60px;
+  width: 294px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+body #root .App .wrapper .block-12 .wrapper-key-features .feature img {
+  max-width: 64px;
+  max-height: 64px;
+}
+body #root .App .wrapper .block-12 .wrapper-key-features .feature p {
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 300;
+  margin-left: 15px;
+}
