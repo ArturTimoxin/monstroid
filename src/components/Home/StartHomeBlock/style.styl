@@ -1,0 +1,91 @@
+.startHomeBlock
+    height: 560px
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://livedemo00.template-help.com/wt_62267_v7/landing/images/home-slider-02.jpg)
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex
+    justify-content: center
+    align-items: center
+    header
+        position: fixed
+        z-index: 1
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width 100%
+        height 0
+        .header-inner
+            background-color: transparent //#333333
+            padding: 35px 15px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            transition: all .3s
+            &.color
+                background-color: #333333
+                padding: 15px 15px
+            .logo
+                max-width 160px
+                height auto
+                cursor: pointer
+            .menu
+                list-style: none
+                display flex
+                @media screen and (max-width: 900px)
+                    display: none
+                li
+                    margin-right: 10px
+                    color: white
+                    font-family: 'Roboto'
+                    cursor pointer
+                    font-size: 15px
+                    transition: all 0.5s
+                    &:hover
+                        color: #2ecba8
+                    &:last-child
+                        margin-right: 0
+        .buy-template-button
+            background-color: transparent
+            border:1px solid white
+            color: white
+            padding: 15px 35px
+            font-size: 18px
+            font-family: 'Roboto'
+            font-weight: 100i
+            cursor pointer
+            outline: none;
+            transition: all 0.5s
+            @media screen and (max-width 400px)
+                display none
+            &:hover
+                background-color: white
+                color: black
+    .wrapper-info
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1
+            text-align: center;
+            font-size: 44px
+            color: #ffffff
+            font-family: 'Roboto'
+            margin: 0
+        h3
+            text-align: center;
+            font-size: 36px
+            color: #ffffff
+            font-family: 'Roboto'
+        .demo
+            background-color: transparent
+            border:1px solid white
+            color: white
+            padding: 15px 35px
+            font-size: 18px
+            font-family: 'Roboto'
+            cursor pointer
+            outline: none;
+            transition: all 0.5s
+            &:hover
+                background-color: white
+                color: black
