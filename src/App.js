@@ -65,6 +65,11 @@ class App extends Component {
     }
   };
 
+  scrollToElement = e => {
+    // TODO: определить начальные координаты элемента
+    document.documentElement.scrollTo(0, 0);
+  };
+
   render() {
     const { colorHeader } = this.state;
     return (
@@ -75,7 +80,7 @@ class App extends Component {
               <div className={`header-inner ${colorHeader ? "color" : ""}`}>
                 <img alt="" className="logo" src={logo} />
                 <ul className="menu">
-                  <li>HOME</li>
+                  <li onClick={this.scrollToElement}>HOME</li>
                   <li>FEATURES</li>
                   <li>NICHE LAYOUTS</li>
                   <li>LAYOUTS</li>

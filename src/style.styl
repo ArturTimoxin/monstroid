@@ -69,6 +69,8 @@ body
                             cursor pointer
                             outline: none;
                             transition: all 0.5s
+                            @media screen and (max-width 400px)
+                                display none
                             &:hover
                                 background-color: white
                                 color: black
@@ -109,22 +111,28 @@ body
                         text-align: center
                         font-size: 55px; 
                         font-family: 'Roboto'
-                        font-weight: 300       
+                        font-weight: 300
+                        @media screen and (max-width 1000px)
+                            font-size: 30px       
                         .change-font
                             font-size: 64px
                             font-family: 'Indie Flower', cursive;
                             display: inline-block
                             color: #119df7
+                            @media screen and (max-width 1000px)
+                                font-size: 35px  
                     .advantages
                         display: flex
                         flex-wrap: wrap
-                        justify-content: center
+                        justify-content: space-around
                         .advantage
-                            padding 0 60px
+                            width: 200px
                             text-align: center
                             i 
                                 color: #119df7
                                 font-size: 100px
+                                @media screen and (max-width 1000px)
+                                    font-size: 70px
                             h3
                                 margin 0
                                 font-family: 'Roboto'

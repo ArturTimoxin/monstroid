@@ -2,23 +2,40 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 .wrapper-get-it {
   background-color: #2dd1ac;
-  padding: 45px 0;
+  padding: 60px 80px 60px 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-.wrapper-get-it .wrapper-text {
-  margin-left: 20px;
+@media screen and (max-width: 1100px) {
+  .wrapper-get-it {
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px;
+  }
 }
-.wrapper-get-it .wrapper-text h3 {
+.wrapper-get-it .wrapper-text div {
   color: #fff;
   font-family: 'Roboto';
   font-size: 35px;
+}
+@media screen and (max-width: 1000px) {
+  .wrapper-get-it .wrapper-text div {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
 }
 .wrapper-get-it .wrapper-text p {
   color: #fff;
   font-family: 'Roboto';
   font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .wrapper-get-it .wrapper-text p {
+    display: none;
+  }
 }
 .wrapper-get-it .get-it {
   background-color: #fff;
@@ -30,7 +47,6 @@
   cursor: pointer;
   outline: none;
   transition: all 0.5s;
-  margin-right: 100px;
   padding: 10px 30px;
   height: 58px;
 }
@@ -116,6 +132,11 @@ body #root .App .wrapper .block-1 header .buy-template-button {
   outline: none;
   transition: all 0.5s;
 }
+@media screen and (max-width: 400px) {
+  body #root .App .wrapper .block-1 header .buy-template-button {
+    display: none;
+  }
+}
 body #root .App .wrapper .block-1 header .buy-template-button:hover {
   background-color: #fff;
   color: #000;
@@ -165,24 +186,39 @@ body #root .App .wrapper .block-3 h2 {
   font-family: 'Roboto';
   font-weight: 300;
 }
+@media screen and (max-width: 1000px) {
+  body #root .App .wrapper .block-3 h2 {
+    font-size: 30px;
+  }
+}
 body #root .App .wrapper .block-3 h2 .change-font {
   font-size: 64px;
   font-family: 'Indie Flower', cursive;
   display: inline-block;
   color: #119df7;
 }
+@media screen and (max-width: 1000px) {
+  body #root .App .wrapper .block-3 h2 .change-font {
+    font-size: 35px;
+  }
+}
 body #root .App .wrapper .block-3 .advantages {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 body #root .App .wrapper .block-3 .advantages .advantage {
-  padding: 0 60px;
+  width: 200px;
   text-align: center;
 }
 body #root .App .wrapper .block-3 .advantages .advantage i {
   color: #119df7;
   font-size: 100px;
+}
+@media screen and (max-width: 1000px) {
+  body #root .App .wrapper .block-3 .advantages .advantage i {
+    font-size: 70px;
+  }
 }
 body #root .App .wrapper .block-3 .advantages .advantage h3 {
   margin: 0;
