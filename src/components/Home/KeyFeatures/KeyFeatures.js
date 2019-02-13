@@ -1,5 +1,5 @@
 import React from "react";
-const icon2 = "http://localhost:3001/home/img/icon2.png";
+const icon2 = "http://localhost:3001/icon2.png";
 export const KeyFeatures = props => {
   const { features } = props;
   return (

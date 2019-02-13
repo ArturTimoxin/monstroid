@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../style/style.css";
-const logo = "http://localhost:3001/home/img/logo.png";
+const logo = "http://localhost:3001/logo.png";
 
 export const StartHomeBlock = props => {
   const { colorHeader, scrollToElement } = props;

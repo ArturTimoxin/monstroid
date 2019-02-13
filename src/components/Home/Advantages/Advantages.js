@@ -1,5 +1,5 @@
 import React from "react";
-const icon = "http://localhost:3001/home/img/icon.png";
+const icon = "http://localhost:3001/icon.png";
 
 export const Advantages = () => {
   return (

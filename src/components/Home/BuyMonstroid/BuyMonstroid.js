@@ -1,5 +1,5 @@
 import React from "react";
-const mac = "http://localhost:3001/home/img/mac.png";
+const mac = "http://localhost:3001/mac.png";
 export const BuyMonstroid = () => {
   return (
     <div className="buyMonstroid">

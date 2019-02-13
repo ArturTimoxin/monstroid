@@ -1,5 +1,5 @@
 import React from "react";
-const MobileImage = "http://localhost:3001/home/img/mobile.png";
+const MobileImage = "http://localhost:3001/mobile.png";
 export const OptimizedMobile = () => {
   return (
     <div className="optimizedMobile">

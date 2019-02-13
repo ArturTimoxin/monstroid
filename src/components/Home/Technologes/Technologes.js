@@ -1,5 +1,5 @@
 import React from "react";
-const laptop = "http://localhost:3001/home/img/laptop.png";
+const laptop = "http://localhost:3001/laptop.png";
 export const Technologes = () => {
   return (
     <div className="technologes">

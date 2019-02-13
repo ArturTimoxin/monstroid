@@ -7,7 +7,6 @@ export const API = (method, url, body) => {
     body: JSON.stringify(body),
   };
   return fetch(`http://localhost:3001${url}`, options).then(res => {
-    console.log(res);
     return res.json();
   });
 };
