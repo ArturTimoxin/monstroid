@@ -1,11 +1,18 @@
-export const API = (method, url, body) => {
+export const API = (method, url, body, isFile = false) => {
   let options = {
     method: method,
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(body),
+    body: !isFile ? JSON.stringify(body) : body,
   };
+  if (!isFile) {
+    options = {
+      ...options,
+      headers: {
+        accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    };
+  }
+
   return fetch(`http://localhost:3001${url}`, options).then(res => {
     return res.json();
   });

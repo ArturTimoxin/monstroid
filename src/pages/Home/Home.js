@@ -17,7 +17,6 @@ class Home extends Component {
     colorHeader: false,
     dataHome: {
       templatesImages: [],
-      preMadeLayouts: [],
       features: [],
     },
   };
@@ -30,10 +29,10 @@ class Home extends Component {
   }
 
   scrollHeader = e => {
-    if (window.scrollY !== 0) {
-      this.setState({ colorHeader: true });
-    } else {
+    if (!window.scrollY) {
       this.setState({ colorHeader: false });
+    } else if (window.scrollY && !this.state.colorHeader) {
+      this.setState({ colorHeader: true });
     }
   };
 
@@ -55,7 +54,7 @@ class Home extends Component {
         />
         <Features />
         <NicheTemplates templatesImages={dataHome.templatesImages} />
-        <PreMadeLayouts preMadeLayouts={dataHome.preMadeLayouts} />
+        <PreMadeLayouts />
         <GetIt
           titleText={"Monstroid² is a flexible solution with lots of advantages"}
           subtitleText={"Our template offers you a variety of elements to be combined."}

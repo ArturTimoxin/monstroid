@@ -1,7 +1,54 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../../style/style.css";
+import { API } from "../../../services/api";
 export const PreMadeLayouts = props => {
-  const { preMadeLayouts } = props;
+  const [titleInput, setDataTitle] = useState();
+  const [fileInput, setDataFile] = useState();
+  const [nameFile, setNameFile] = useState();
+  const [error, setError] = useState("");
+  const [preMadeLayouts, setPreMadeLayouts] = useState([]);
+  useEffect(() => {
+    API("GET", "/home/premade").then(data => {
+      setPreMadeLayouts(data.layouts);
+    });
+  });
+
+  const changeInput = e => {
+    switch (e.target.name) {
+      case "title":
+        setDataTitle(e.target.value);
+        setError("");
+        break;
+      case "premadeImage":
+        setDataFile(e.target.files[0]);
+        setNameFile(e.target.files[0].name);
+        setError("");
+        break;
+      default:
+        return null;
+    }
+  };
+
+  const sendLayout = e => {
+    e.preventDefault();
+    if (titleInput && fileInput) {
+      if (titleInput.length <= 20) {
+        let formData = new FormData();
+        formData.append("title", titleInput);
+        formData.append("premadeImage", fileInput);
+        API("POST", "/home/premade", formData, true);
+        setDataTitle("");
+        setDataFile(null);
+        setNameFile("");
+        setError("");
+      } else {
+        setError("Title length must be no more than 20 characters");
+      }
+    } else {
+      setError("Fill in all the fields");
+    }
+    //.then(data => { setPreMadeLayouts(preMadeLayouts.concat(data.newPreMadeLayout)); // можно не делать, т.к. useEffect всегда прослушивает массив на сервере});
+  };
   return (
     <div className="preMadeLayouts">
       <h1>Pre-made layouts</h1>
@@ -16,7 +63,27 @@ export const PreMadeLayouts = props => {
           );
         })}
       </div>
-      <button className="view-more">VIEW MORE</button>
+      <div className="uploadPreMadeLayout">
+        <h4 className="titleUploadPreMadeLayout">Add your PreMade layout in our collection</h4>
+        <form encType="multipart/form-data" onSubmit={sendLayout}>
+          <input
+            type="text"
+            name="title"
+            value={titleInput}
+            onChange={changeInput}
+            placeholder="Enter name of your layout"
+          />
+          <label htmlFor="input-premadeImage" value={fileInput} className="labelFileInput">
+            Click here for choose file
+          </label>
+          <div className="nameFile">{nameFile}</div>
+          <div className="error">{error}</div>
+          <input type="file" id="input-premadeImage" name="premadeImage" onChange={changeInput} />
+          <button className="send" type="submit">
+            Send
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

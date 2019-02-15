@@ -1,11 +1,14 @@
 var express = require("express");
 var bodyParser = require("body-parser"); // midleware для перевода данных из json
+var cors = require("cors");
 var app = express();
+
 var port = 3001;
 var homeRouter = require("./router/home-router.js");
 const path = require("path");
 
-app.use(bodyParser.json()); // подлючаем midleware
+app.use(bodyParser.json({ limit: "50mb" })); // подлючаем midleware
+app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 /* 
    Возвращает промежуточное программное обеспечение, 
    которое анализирует только тела с урлен-кодом и просматривает только те запросы, 
@@ -15,17 +18,17 @@ app.use(bodyParser.json()); // подлючаем midleware
    Этот объект будет содержать пары ключ-значение.
 */
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*"); // c какой url можно принимать запросы
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  res.header("Access-Control-Allow-Credentials", true);
-  res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE, OPTIONS, PATCH");
-  next(); // переход к след. midleware
-});
+var corsOptions = {
+  origin: "*", //white list
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true,
+  optionsSuccessStatus: 200,
+};
 
-// var homeImgPath = path.basename("../server-img");
-// app.use(express.static(homeImgPath)); //router.use(express.static("../src/assets/"));
-app.use(express.static(path.join(__dirname, "server-img")));
+app.use(cors(corsOptions));
+
+var homeImgPath = path.basename("../server-img");
+app.use(express.static(homeImgPath));
 
 app.use("/home", homeRouter);
 app.use("/*", function(req, res) {

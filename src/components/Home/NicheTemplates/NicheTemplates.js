@@ -2,7 +2,6 @@ import React from "react";
 import "../../../style/style.css";
 export const NicheTemplates = props => {
   const { templatesImages } = props;
-  console.log(templatesImages);
   return (
     <div className="nicheTemplates">
       <h1>Niche Templates</h1>

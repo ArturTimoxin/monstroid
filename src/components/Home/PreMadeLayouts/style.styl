@@ -41,18 +41,71 @@
                 text-align: center
                 font-family: 'Roboto'
                 font-weight: 300
-                font-size: 19px 
-    .view-more
-        background-color: #2dd1ac
-        border:1px solid #2dd1ac
-        border-radius: 3px
-        color: white
-        font-size: 18px
-        font-family: 'Roboto'
-        cursor pointer
-        outline: none;
-        transition: all 0.5s
-        padding: 15px 30px
-        transition all 0.5s
-        &:hover
-            background-color: #24aa8c
+                font-size: 19px
+    .uploadPreMadeLayout
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        .titleUploadPreMadeLayout
+            margin 0
+            font-size: 40px; 
+            font-family: 'Roboto'
+            text-align: center;
+            font-weight: 300
+        form
+            display: inherit
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            width: 40%
+            margin-top: 25px
+            height: 200px
+            input[name="title"]
+                width: 100%
+                height 50px
+                box-sizing: border-box
+                padding-left: 18px
+                opacity: 0.6;
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: condensed;
+                line-height: 1.88;
+                letter-spacing: normal;
+                text-align: left;
+                color: rgba(86, 86, 86, 0.6);
+                outline: none;
+            .labelFileInput
+                font-family: 'Roboto';
+                color: rgba(86, 86, 86, 0.6);
+                font-size: 16px;
+                padding: 10px
+                cursor pointer
+                border: solid 1px #e6e6e6
+                border-radius: 3px
+            .nameFile
+                font-family: 'Roboto';
+                font-size: 16px;
+                color: rgba(86, 86, 86, 0.6);
+            .error
+                font-family: 'Roboto';
+                font-size: 12px;
+                color: red
+            input[name="premadeImage"]
+                display: none
+            button.send
+                background-color: #2dd1ac
+                border:1px solid #2dd1ac
+                border-radius: 3px
+                color: white
+                font-size: 18px
+                font-family: 'Roboto'
+                cursor pointer
+                outline: none;
+                transition: all 0.5s
+                padding: 15px 30px
+                transition all 0.5s
+                &:hover
+                    background-color: #24aa8c
