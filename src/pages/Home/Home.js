@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../../style/style.css";
-import { API } from "../../services/api";
+import apiAxios from "../../services/apiAxios";
 import { GetIt } from "../../components/Home/GetIt/GetIt";
 import { StartHomeBlock } from "../../components/Home/StartHomeBlock/StartHomeBlock";
 import { Features } from "../../components/Home/Features/Features";
@@ -23,8 +23,8 @@ class Home extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.scrollHeader);
-    API("GET", "/home").then(data => {
-      this.setState({ dataHome: data });
+    apiAxios.get("/home").then(res => {
+      this.setState({ dataHome: res.data });
     });
   }
 

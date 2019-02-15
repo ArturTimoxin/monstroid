@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../../style/style.css";
-import { API } from "../../../services/api";
+import apiAxios from "../../../services/apiAxios";
 export const PreMadeLayouts = props => {
   const [titleInput, setDataTitle] = useState();
   const [fileInput, setDataFile] = useState();
@@ -8,8 +8,8 @@ export const PreMadeLayouts = props => {
   const [error, setError] = useState("");
   const [preMadeLayouts, setPreMadeLayouts] = useState([]);
   useEffect(() => {
-    API("GET", "/home/premade").then(data => {
-      setPreMadeLayouts(data.layouts);
+    apiAxios.get("/home/premade").then(res => {
+      setPreMadeLayouts(res.data.layouts);
     });
   });
 
@@ -36,7 +36,7 @@ export const PreMadeLayouts = props => {
         let formData = new FormData();
         formData.append("title", titleInput);
         formData.append("premadeImage", fileInput);
-        API("POST", "/home/premade", formData, true);
+        apiAxios.post("/home/premade", formData);
         setDataTitle("");
         setDataFile(null);
         setNameFile("");
