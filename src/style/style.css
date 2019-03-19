@@ -350,6 +350,11 @@
   font-weight: 300;
   font-size: 19px;
 }
+.preMadeLayouts .wrapper-pre-made-layouts .pre-made-layout-empty {
+  width: 230px;
+  height: 1px;
+  margin: 30px 35px;
+}
 .preMadeLayouts .uploadPreMadeLayout {
   width: 100%;
   display: flex;

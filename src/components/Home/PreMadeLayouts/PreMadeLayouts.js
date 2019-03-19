@@ -62,6 +62,10 @@ export const PreMadeLayouts = props => {
             </div>
           );
         })}
+        <div className="pre-made-layout-empty" />
+        <div className="pre-made-layout-empty" />
+        <div className="pre-made-layout-empty" />
+        <div className="pre-made-layout-empty" />
       </div>
       <div className="uploadPreMadeLayout">
         <h4 className="titleUploadPreMadeLayout">Add your PreMade layout in our collection</h4>
